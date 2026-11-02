@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6fb;
+    color: #22232b;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #22232b;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin: 0;
+    color: #f6d03b;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.form-section,
+.library-section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font: inherit;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5e6ad2;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+.secondary-button {
+    background-color: #666666;
+}
+
+.tools {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.tools input {
+    flex: 2;
+}
+
+.tools select {
+    flex: 1;
+}
+
+.book-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.book-card {
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+.book-card h3 {
+    margin-top: 0;
+    color: #5e6ad2;
+}
+
+.book-card p {
+    overflow-wrap: anywhere;
+}
+
+.book-status {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    background-color: #f6d03b;
+    color: #22232b;
+    font-size: 13px;
+}
+
+.book-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.edit-button {
+    background-color: #5e6ad2;
+}
+
+.delete-button {
+    background-color: #d94343;
+}
+
+.empty-message {
+    color: #666666;
+    text-align: center;
+    padding: 20px;
+}
+
+footer {
+    background-color: #22232b;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+@media (max-width: 650px) {
+    main {
+        width: 95%;
+    }
+
+    .form-section,
+    .library-section {
+        padding: 15px;
+    }
+
+    .tools {
+        flex-direction: column;
+    }
+
+    .book-list {
+        grid-template-columns: 1fr;
+    }
+}
