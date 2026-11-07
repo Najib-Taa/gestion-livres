@@ -297,7 +297,7 @@ L'application peut être déployée avec **GitHub Pages** afin de la rendre acce
 
 Le lien de l'application sera ajouté ici après le déploiement :
 
-**URL du projet :** À compléter.
+**URL du projet :[Lien GitHub](https://github.com/Najib-Taa/gestion-livres)
 
 
 ---
